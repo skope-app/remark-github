@@ -110,10 +110,10 @@ function github(options) {
     findAndReplace(
       tree,
       [
-        [referenceRegex, replaceReference],
+        // [referenceRegex, replaceReference],
         [mentionRegex, replaceMention],
         [/(?:#|\bgh-)([1-9]\d*)/gi, replaceIssue],
-        [/\b[a-f\d]{7,40}\b/gi, replaceHash]
+        // [/\b[a-f\d]{7,40}\b/gi, replaceHash]
       ],
       {ignore: ['link', 'linkReference']}
     )
